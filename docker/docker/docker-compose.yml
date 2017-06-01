@@ -4,6 +4,6 @@ services:
   apache:
     image: httpd
     volumes:
-      - ".:/var/www/html/"
+      - "../web:/usr/local/apache2/htdocs/"
     ports:
       - "8081:80"
